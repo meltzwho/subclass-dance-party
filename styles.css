@@ -25,3 +25,11 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
+
+.kitten {
+  margin: 10px;
+  position: absolute;
+  border-radius: 5px;
+  animation:spin 4s linear infinite;
+}
+@keyframes spin {100%{transform:rotate(360deg);}}
