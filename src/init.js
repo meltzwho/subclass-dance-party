@@ -30,6 +30,11 @@ $(document).ready(function () {
     $('.dancefloor').append(dancer.$node);
   });
 
-  $('.dancefloor').on();
+  $('.lineUp').click(function () {
+    $('.dancer').css({
+      left: '100px',
+      animation: 'none'
+    });
+  });
 
 });
