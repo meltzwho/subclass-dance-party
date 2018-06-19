@@ -32,4 +32,6 @@ body, a:link, a:visited, a:active{
   border-radius: 5px;
   animation:spin 4s linear infinite;
 }
-@keyframes spin {100%{transform:rotate(360deg);}}
+/* @keyframes spin {100%{transform:rotate(360deg);}} */
+@keyframes spin {50%{transform:rotate(360deg); left: 20px;} 50%{transform:rotate(360deg); right: 20px;}}
+
