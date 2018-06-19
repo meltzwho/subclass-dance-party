@@ -3,7 +3,7 @@ body, html{
 }
 body{
   margin: 0px;
-  background-color:#444;
+  background-image: url(https://orig00.deviantart.net/2ce6/f/2009/160/7/e/discoball_by_supersaiyandino.gif);
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
@@ -21,17 +21,23 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
+  margin: 50px;
   border:10px solid red;
   border-radius:10px;
   position:absolute;
 }
 
 .kitten {
-  margin: 10px;
+  margin: 50px;
+  position: absolute;
+  border-radius: 20px;
+  animation:spin 5s linear infinite;
+}
+
+.banana {
   position: absolute;
   border-radius: 5px;
-  animation:spin 4s linear infinite;
+  animation: move 5s linear infinite;
 }
-/* @keyframes spin {100%{transform:rotate(360deg);}} */
-@keyframes spin {50%{transform:rotate(360deg); left: 20px;} 50%{transform:rotate(360deg); right: 20px;}}
-
+@keyframes spin {100%{transform:rotate(360deg);}}
+@keyframes move {50%{transform:rotate(360deg); right: 90%;} 50%{transform:rotate(360deg); left: 90%;}}
